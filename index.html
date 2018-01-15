@@ -27,6 +27,7 @@
     <!-- css start-->
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/default2.css">
     <!-- js start-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/lib/swiper.min.js"></script>
@@ -135,6 +136,15 @@
             <div class="f24 wTxt bls mt_s">這是提供特別熱愛三星產品的尊貴用戶，能聚集歡樂、
                 <br>分享知識、獲得更多感動的專屬社群。</div>
         </div>
+        <div class="pageTxtBox2">
+            <div class="subContainer">
+                <div class="f36 wTxt bls">三星聚樂部 入會資格說明</div>
+                <div class="f23 wTxt  mt_s">自2017年4月28日起，在任何通路購買不限機型的三星
+                    <br>智慧手機或平板，即可申請成為「三星聚樂部」會員。
+
+                </div>
+            </div>
+        </div>
         <div class="picWrap hoverAnimation">
             <div class="picBox ">
                 <div class="pic p1"></div>
@@ -167,10 +177,10 @@
         </div>
         <div class="pageTxtBox mt_b">
             <div class="f46 goldTxt bls">活動花絮</div>
-            <!-- <div class="tabBox wTxt f30 withActiveLine mt_s">
-                <div class="tab active">最新活動</div>
-                <div class="tab">過去活動</div>
-            </div> -->
+            <div class="tabBox wTxt f30 withActiveLine mt_s eventTabs">
+                <div class="tab active tab1">最新活動</div>
+                <div class="tab tab2">過去活動</div>
+            </div>
         </div>
         <div class="swiper-container" id='eventSwiper'>
             <!-- Additional required wrapper -->
@@ -240,5 +250,52 @@
         </div>
     </div>
 </body>
+<script>
+    var newsSwiper,eventsSwiper;
+
+    $(document).ready(function () {
+        initNewSwiper();
+        initEventSwiper();
+        $('.eventTabs .tab1').on('click', function (e) {
+            eventsSwiper.slideTo(0,600)
+            $(this).addClass('active').siblings().removeClass('active');
+            
+        })
+        $('.eventTabs .tab2').on('click', function (e) {
+            eventsSwiper.slideTo(3,600)
+            $(this).addClass('active').siblings().removeClass('active');
+            
+        })
+    })
+
+    function initNewSwiper() {
+        newsSwiper = new Swiper('#newsSwiper', {
+            pagination: {
+                el: '.newsSwiper-pagination',
+                type: 'bullets',
+            }
+        });
+    }
+
+    function initEventSwiper() {
+        eventsSwiper = new Swiper('#eventSwiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            initialSlide: 2,
+            pagination: {
+                el: '#eventSwiper .swiper-pagination',
+            },
+        });
+    }
+</script>
 
 </html>
