@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>lecture</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640,user-scalable=0">
+    <!-- hiding the Browser’s User Interface -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- meta start -->
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="copyright" content="" />
+    <link rel="image_src" href="" />
+    <!-- iOS 6 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <!-- OG -->
+    <meta property="og:title" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="fb:app_id" content="" />
+    <!-- css start-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <!-- js start-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/lib/swiper.min.js"></script>
+    <!-- archung js -->
+    <script type="text/javascript" src="js/lib/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/lib/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="js/ChungTool.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- live reload -->
+    <script>
+        if (!ChungTool.isOnline()) {
+            document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+                ':35729/livereload.js?snipver=1"></' + 'script>')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left"></div>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="right"></div>
+    </div>
+    <div class="mainContainer" id="lecturePage">
+        <div class="menuBar">
+            <a href="member.html" class="signIn"></a>
+            <div class="line"></div>
+            <div class="login poploginBtn"></div>
+            <div class="line"></div>
+            <div class="menu menuToggle"></div>
+        </div>
+        <div class="sideMenu">
+            <div class="clozBtn menuToggle"></div>
+            <ul class='goldTxt f26 ta_c'>
+                <li>星禮有您</li>
+                <li>會員權益</li>
+                <li>活動花絮</li>
+                <li>常見問題</li>
+            </ul>
+        </div>
+        <div class="popLogin hide">
+            <div class="container goldFrameBox pBox">
+                <div class="clozBtn"></div>
+                <div class="f36 goldTxt">請輸入您的三星帳戶</div>
+                <form action="" class='mt_b f24 wTxt'>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">ID</span>
+                            <div class="inputConatiner">
+                                <input type="text" class='wTxt'>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">密碼</span>
+                            <div class="inputConatiner">
+                                <input type="password" class='wTxt'>
+                            </div>
+                        </label>
+                    </div>
+                    <input type="submit" class='formSubmitBtn' value='登入'>
+                    <div class="wTxt f18 mt_b ta_c">
+                        <a href="#" class="blueTxt">忘記您的帳戶ID或密碼</a>
+                        <br>或
+                        <a href="#" class="blueTxt">在此註冊</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="pageFixTitle">
+            <div class="pageFixTitleBg" style="background-image:url('images/sign_bg.jpg')"></div>
+            <div class="pageBox">
+                <div class="title"></div>
+            </div>
+        </div>
+        <div class="blackPageBox">
+            <div class="container f24">
+                <div class="t1"></div>
+                <p>
+                    <div class="goldTxt">活動時間：</div>
+                    <div class="wTxt">2017-08-05(六) 11:00 ~ 2017-08-06(日) 18:00 (GMT+8)</div>
+                </p>
+                <p>
+                    <div class="goldTxt">活動地點：</div>
+                    <div class="wTxt">北中南三地同步舉辦 ((詳細地址請見活動內容))</div>
+                </p>
+                <p>
+                    <div class="goldTxt">活動詳情：</div>
+                    <div class="wTxt">想知道Galaxy S8|S8+還有哪些三星的秘星技能嗎？
+                        <br> 三星聚樂部會員限定! 特別舉辦【８個你該知道的Galaxy S8|S8+秘星】唯有會員才能報名參加的講座，讓您創造比別人更精彩的生活！
+                        <br> 現場除了S8|S8+之外，還會讓您體驗最新S8|S8+周邊商品及贈送相關好禮，名額有限，報名從速！
+                    </div>
+                </p>
+                <div class="goldTxt f46 ta_c mt_bb">活動報名表</div>
+                <form action="" class='goldFrameBox pBox mt_b f24 wTxt'>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">Email</span>
+                            <div class="inputConatiner">
+                                <input type="text wTxt">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">報名地區</span>
+                            <div class="selectWrap">
+                                <select name="" id="">
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                    <option value="">C</option>
+                                    <option value="">D</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">報名場次</span>
+                            <div class="selectWrap">
+                                <select name="" id="">
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                    <option value="">C</option>
+                                    <option value="">D</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">攜伴人數</span>
+                            <div class="selectWrap">
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+                    <input type="submit" class='formSubmitBtn' value='送出'>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f_top">
+                <div class="pic"></div>
+            </div>
+            <div class="f_bottom">
+                <div class="pic"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+
+        $('form .formSubmitBtn').on('click', function (e) {
+            e.preventDefault();
+            window.location = 'index.html'
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640,user-scalable=0">
+    <!-- hiding the Browser’s User Interface -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- meta start -->
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="copyright" content="" />
+    <link rel="image_src" href="" />
+    <!-- iOS 6 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <!-- OG -->
+    <meta property="og:title" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="fb:app_id" content="" />
+    <!-- css start-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <!-- js start-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/lib/swiper.min.js"></script>
+    <!-- archung js -->
+    <script type="text/javascript" src="js/lib/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/lib/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="js/ChungTool.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- live reload -->
+    <script>
+        if (!ChungTool.isOnline()) {
+            document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+                ':35729/livereload.js?snipver=1"></' + 'script>')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left"></div>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="right"></div>
+    </div>
+    <div class="mainContainer" id='index'>
+        <div class="menuBar">
+            <a href="member.html" class="signIn"></a>
+            <div class="line"></div>
+            <div class="login poploginBtn"></div>
+            <div class="line"></div>
+            <div class="menu menuToggle"></div>
+        </div>
+        <div class="sideMenu">
+            <div class="clozBtn menuToggle"></div>
+            <ul class='goldTxt f26 ta_c'>
+                <li>星禮有您</li>
+                <li>會員權益</li>
+                <li>活動花絮</li>
+                <li>常見問題</li>
+            </ul>
+        </div>
+        <div class="popLogin hide">
+            <div class="container goldFrameBox pBox">
+                <div class="clozBtn"></div>
+                <div class="f36 goldTxt">請輸入您的三星帳戶</div>
+                <form action="" class='mt_b f24 wTxt'>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">ID</span>
+                            <div class="inputConatiner">
+                                <input type="text" class='wTxt'>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt grayTxt">密碼</span>
+                            <div class="inputConatiner">
+                                <input type="password" class='wTxt'>
+                            </div>
+                        </label>
+                    </div>
+                    <input type="submit" class='formSubmitBtn' value='登入'>
+                    <div class="wTxt f18 mt_b ta_c">
+                        <a href="#" class="blueTxt">忘記您的帳戶ID或密碼</a>
+                        <br>或
+                        <a href="#" class="blueTxt">在此註冊</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="swiper-container" id='newsSwiper'>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide1">
+
+                    <video width="100%" width="100" % autoplay loop="loop">
+                        <source src="images/star.mp4">
+                    </video>
+                    <div class="pic"></div>
+                    <div class="titleBox">
+                        <a href="about.html">
+                            <div class="title"></div>
+                            <div class="btn"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="titleBox">
+                        <a href="lecture.html">
+                            <div class="title"></div>
+                            <div class="btn"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination newsSwiper-pagination"></div>
+        </div>
+        <div class="pageTxtBox">
+            <div class="f46 goldTxt bls">歡迎來到三星聚樂部</div>
+            <div class="f24 wTxt bls mt_s">這是提供特別熱愛三星產品的尊貴用戶，能聚集歡樂、
+                <br>分享知識、獲得更多感動的專屬社群。</div>
+        </div>
+        <div class="picWrap hoverAnimation">
+            <div class="picBox ">
+                <div class="pic p1"></div>
+                <div class="txt wTxt">
+                    <div class="f36">新機發表會員優遇</div>
+                    <div class="f23 mt_s">新機搶先體驗，還可能有獨家加碼組合</div>
+                </div>
+            </div>
+            <div class="picBox">
+                <div class="pic p2"></div>
+                <div class="txt wTxt">
+                    <div class="f36">個人專屬 用心對您</div>
+                    <div class="f23 mt_s">特別時光貼心照顧，生日同樂、不定時關懷</div>
+                </div>
+            </div>
+            <div class="picBox">
+                <div class="pic p3"></div>
+                <div class="txt ">
+                    <div class="f36">娛樂超有感</div>
+                    <div class="f23 mt_s">會員獨享活動，show出您的熱情與熱血</div>
+                </div>
+            </div>
+            <div class="picBox">
+                <div class="pic p4"></div>
+                <div class="txt wTxt">
+                    <div class="f36">達人教學面對面</div>
+                    <div class="f23 mt_s">深入探究Galaxy奧秘，專業達人講師開講</div>
+                </div>
+            </div>
+        </div>
+        <div class="pageTxtBox mt_b">
+            <div class="f46 goldTxt bls">活動花絮</div>
+            <!-- <div class="tabBox wTxt f30 withActiveLine mt_s">
+                <div class="tab active">最新活動</div>
+                <div class="tab">過去活動</div>
+            </div> -->
+        </div>
+        <div class="swiper-container" id='eventSwiper'>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="lecture.html">
+                        <div class="pic" style="background-image:url('images/ss5.png')"></div>
+                        <div class="txtBox">
+                            <div class="f32 goldTxt">好視降臨 旗艦禮遇</div>
+                            <!-- <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div> -->
+                            <div class="f20 grayTxt mt_s">凡於活動期間，購買三星電視指定機種，郵寄回函或線上登錄即可獲得旗艦之皇Galaxy Note8。</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="lecture.html">
+                        <div class="pic" style="background-image:url('images/ss4.png')"></div>
+                        <div class="txtBox">
+                            <div class="f32 goldTxt">8 個你該知道的 Galaxy S8 秘星</div>
+                            <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div>
+                            <div class="f20 grayTxt mt_s">唯有會員才能報名參加的講座，讓您創造比別人更精彩的生活！</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="lecture.html">
+                        <div class="pic" style="background-image:url('images/ss1.png')"></div>
+                        <div class="txtBox">
+                            <div class="f32 goldTxt">會員獨享 ‧ 電影同樂</div>
+                            <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div>
+                            <div class="f20 grayTxt mt_s">三星聚樂部凝聚出強大的能量場，星力再起，敬邀會員一同觀賞經典電影</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="lecture.html">
+                        <div class="pic" style="background-image:url('images/ss2.png')"></div>
+                        <div class="txtBox">
+                            <div class="f32 goldTxt">三星公益路跑活動</div>
+                            <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div>
+                            <div class="f20 grayTxt mt_s">號召2萬5千人一同共襄盛舉，三星聚樂部會員獨享免報名費！ </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="lecture.html">
+                        <div class="pic" style="background-image:url('images/ss3.png')"></div>
+                        <div class="txtBox">
+                            <div class="f32 goldTxt">好視降臨 旗艦禮遇</div>
+                            <!-- <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div> -->
+                            <div class="f20 grayTxt mt_s">凡於活動期間，購買三星電視指定機種，郵寄回函或線上登錄即可獲得旗艦之皇Galaxy Note8。</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="f_top">
+            <div class="pic"></div>
+        </div>
+        <div class="f_bottom">
+            <div class="pic"></div>
+        </div>
+    </div>
+</body>
+
+</html>
