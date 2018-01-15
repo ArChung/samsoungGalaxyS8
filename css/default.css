@@ -3124,6 +3124,10 @@ a:hover {
   cursor: pointer;
 }
 
+.menuBar.fixMenu {
+  position: fixed;
+}
+
 .padShow {
   display: none !important;
 }
