@@ -3100,6 +3100,10 @@ a:hover {
 }
 
 /*pages_layout */
+body {
+  overflow-x: hidden;
+}
+
 #index .pageTxtBox2 {
   width: 100%;
   height: 500px;
@@ -3126,6 +3130,27 @@ a:hover {
 
 .menuBar.fixMenu {
   position: fixed;
+}
+
+.mainContainer .menuBar .login {
+  background-image: none;
+  width: auto;
+}
+.mainContainer .menuBar .login .manPic {
+  width: 28px;
+  height: 26px;
+  background-image: url("../images/manHead.png");
+  display: inline-block;
+  vertical-align: text-top;
+  margin-top: 19px;
+  margin-right: 5px;
+}
+.mainContainer .menuBar .login .txt {
+  color: #e9d3a9;
+  display: inline-block;
+  vertical-align: text-top;
+  letter-spacing: 0.4rem;
+  line-height: 60px;
 }
 
 .padShow {

@@ -47,28 +47,42 @@
 </head>
 
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <div class="left"></div>
         <a href="index.html">
             <div class="logo"></div>
         </a>
         <div class="right"></div>
-    </div>
+    </div> -->
     <div class="mainContainer" id='index'>
         <div class="menuBar">
             <a href="member.html" class="signIn"></a>
             <div class="line"></div>
-            <div class="login poploginBtn"></div>
+            <div class="login poploginBtn">
+                <i class="manPic"></i>
+                <div class="txt f24">Login</div>
+            </div>
             <div class="line"></div>
             <div class="menu menuToggle"></div>
         </div>
         <div class="sideMenu">
             <div class="clozBtn menuToggle"></div>
             <ul class='goldTxt f26 ta_c'>
-                <li>星禮有您</li>
-                <li>會員權益</li>
-                <li>活動花絮</li>
-                <li>常見問題</li>
+                <li>
+                    <a href="index.html">首頁</a>
+                </li>
+                <li>
+                    <a href="index.html?page=1">星禮有您</a>
+                </li>
+                <li>
+                    <a href="index.html?page=2">會員權益</a>
+                </li>
+                <li>
+                    <a href="index.html?page=3">活動花絮</a>
+                </li>
+                <li>
+                    <a href="#">常見問題</a>
+                </li>
             </ul>
         </div>
         <div class="popLogin hide">
@@ -131,7 +145,7 @@
             </div>
             <div class="swiper-pagination newsSwiper-pagination"></div>
         </div>
-        <div class="pageTxtBox">
+        <div class="pageTxtBox " id='pagePoint1'>
             <div class="f46 goldTxt bls">歡迎來到三星聚樂部</div>
             <div class="f24 wTxt bls mt_s">這是提供特別熱愛三星產品的尊貴用戶，能聚集歡樂、
                 <br>分享知識、獲得更多感動的專屬社群。</div>
@@ -167,20 +181,19 @@
                 </div>
             </div>
         </div>
-        <div class="pageTxtBox2 mt_b">
+        <div class="pageTxtBox2 mt_b" id='pagePoint2'>
             <div class="subContainer">
                 <div class="f36 wTxt bls">三星聚樂部 入會資格說明</div>
                 <div class="f23 wTxt  mt_s">自2017年4月28日起，在任何通路購買不限機型的三星
                     <br>智慧手機或平板，即可申請成為「三星聚樂部」會員。
-
                 </div>
             </div>
         </div>
-        <div class="pageTxtBox mt_b">
+        <div class="pageTxtBox mt_b" id='pagePoint3'>
             <div class="f46 goldTxt bls">活動花絮</div>
             <div class="tabBox wTxt f30 withActiveLine mt_s eventTabs">
-                <div class="tab active tab1">最新活動</div>
                 <div class="tab tab2">過去活動</div>
+                <div class="tab active tab1">最新活動</div>
             </div>
         </div>
         <div class="swiper-container" id='eventSwiper'>
@@ -189,51 +202,41 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <a href="lecture.html">
-                        <div class="pic" style="background-image:url('images/ss5.png')"></div>
+                        <div class="pic" style="background-image:url('images/Event_KK.png')"></div>
                         <div class="txtBox">
-                            <div class="f32 goldTxt">好視降臨 旗艦禮遇</div>
-                            <!-- <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div> -->
-                            <div class="f20 grayTxt mt_s">凡於活動期間，購買三星電視指定機種，郵寄回函或線上登錄即可獲得旗艦之皇Galaxy Note8。</div>
+                            <div class="f32 goldTxt">眾星雲集，會員專屬</div>
+                            <div class="f18 goldTxt">活動日期：2018-01-20(六)</div>
+                            <div class="f20 grayTxt mt_s">邀集會員一同參與【第13 屆KKBOX 風雲榜】，盡情享受三星聚樂部會員專屬的尊榮禮遇！</div>
                         </div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="lecture.html">
-                        <div class="pic" style="background-image:url('images/ss4.png')"></div>
+                        <div class="pic" style="background-image:url('images/Event_Lecture.jpeg')"></div>
                         <div class="txtBox">
                             <div class="f32 goldTxt">8 個你該知道的 Galaxy S8 秘星</div>
-                            <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div>
-                            <div class="f20 grayTxt mt_s">唯有會員才能報名參加的講座，讓您創造比別人更精彩的生活！</div>
+                            <div class="f18 goldTxt">活動日期：2017-08-05(六) ~ 2017-08-06(日) </div>
+                            <div class="f20 grayTxt mt_s">三星聚樂部會員限定! 邀請會員一起探索Galaxy S8|S8+還有哪些三星的秘星技能！</div>
                         </div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="lecture.html">
-                        <div class="pic" style="background-image:url('images/ss1.png')"></div>
+                        <div class="pic" style="background-image:url('images/Event_Movie.jpeg')"></div>
                         <div class="txtBox">
                             <div class="f32 goldTxt">會員獨享 ‧ 電影同樂</div>
-                            <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div>
-                            <div class="f20 grayTxt mt_s">三星聚樂部凝聚出強大的能量場，星力再起，敬邀會員一同觀賞經典電影</div>
+                            <div class="f18 goldTxt">活動日期：2017-12-16(六) ~ 2017-12-17(日) </div>
+                            <div class="f20 grayTxt mt_s">為感謝會員的支持，讓三星聚樂部凝聚出強大的能量場，邀請會員觀賞經典電影「星際大戰：最後的絕地武士」</div>
                         </div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="lecture.html">
-                        <div class="pic" style="background-image:url('images/ss2.png')"></div>
+                        <div class="pic" style="background-image:url('images/Event_Running.jpeg')"></div>
                         <div class="txtBox">
                             <div class="f32 goldTxt">三星公益路跑活動</div>
-                            <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div>
-                            <div class="f20 grayTxt mt_s">號召2萬5千人一同共襄盛舉，三星聚樂部會員獨享免報名費！ </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="lecture.html">
-                        <div class="pic" style="background-image:url('images/ss3.png')"></div>
-                        <div class="txtBox">
-                            <div class="f32 goldTxt">好視降臨 旗艦禮遇</div>
-                            <!-- <div class="f18 goldTxt">活動日期：2018.12/25-12/26</div> -->
-                            <div class="f20 grayTxt mt_s">凡於活動期間，購買三星電視指定機種，郵寄回函或線上登錄即可獲得旗艦之皇Galaxy Note8。</div>
+                            <div class="f18 goldTxt">活動日期：2017-10-15(日) </div>
+                            <div class="f20 grayTxt mt_s">邀請聚樂部會員共襄盛舉公益路跑，300個免報名費的名額限量送出！</div>
                         </div>
                     </a>
                 </div>
@@ -242,14 +245,14 @@
         </div>
 
     </div>
-    <div class="footer">
+    <!-- <div class="footer">
         <div class="f_top">
             <div class="pic"></div>
         </div>
         <div class="f_bottom">
             <div class="pic"></div>
         </div>
-    </div>
+    </div> -->
 </body>
 <script>
     var newsSwiper, eventsSwiper;
@@ -258,8 +261,9 @@
         initNewSwiper();
         initEventSwiper();
         $('.eventTabs .tab1').on('click', function (e) {
-            eventsSwiper.slideTo(3, 600)
+            eventsSwiper.slideTo(eventsSwiper.slides.length - 1, 600)
             $(this).addClass('active').siblings().removeClass('active');
+            // console.log(eventsSwiper.slides.length)
 
         })
         $('.eventTabs .tab2').on('click', function (e) {
@@ -269,7 +273,10 @@
         })
 
 
-        
+        if ($("#pagePoint" + getUrlParameter('page').length != 0)) {
+            pageScrollAni($("#pagePoint" + getUrlParameter('page')).offset().top)
+        }
+
     })
 
     function initNewSwiper() {
@@ -294,11 +301,33 @@
                 modifier: 1,
                 slideShadows: true,
             },
-            initialSlide: 2,
+            initialSlide: 1,
             pagination: {
                 el: '#eventSwiper .swiper-pagination',
             },
         });
+    }
+
+    function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    }
+
+    function pageScrollAni(top) {
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+            scrollTop: top
+        }, 0);
     }
 </script>
 
