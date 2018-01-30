@@ -64,6 +64,7 @@ html, body {
 
 .mainContainer {
   position: relative;
+  min-height: 100%;
 }
 .mainContainer#index {
   background-color: black;
@@ -733,6 +734,26 @@ a:hover {
   background-position: 0 0;
   overflow: auto;
 }
+
+
+.blackBgPage {
+  background: black url("../images/member_bg.jpg");
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  overflow: auto;
+}
+
+.blackBgPage > .container {
+  margin: 150px auto;
+  width: 1050px;
+}
+
+
 #memberPage > .container {
   margin: 150px auto;
   width: 1050px;

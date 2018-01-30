@@ -3184,6 +3184,41 @@ form input[type='checkbox']:disabled:not(:checked) + label:before {
   max-width: 350px;
 }
 
+#eventPage .swiper-container {
+  width: 100%;
+  position: relative;
+  position: relative;
+}
+#eventPage .swiper-container:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 75%;
+}
+#eventPage .swiper-container > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#eventPage .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#eventPage .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .padShow {
   display: none !important;
 }
