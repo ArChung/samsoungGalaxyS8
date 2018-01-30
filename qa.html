@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>QandA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640,user-scalable=0">
+    <!-- hiding the Browser’s User Interface -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- meta start -->
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="copyright" content="" />
+    <link rel="image_src" href="" />
+    <!-- iOS 6 -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <!-- OG -->
+    <meta property="og:title" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="fb:app_id" content="" />
+    <!-- css start-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/default2.css">
+
+    <!-- js start-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/lib/swiper.min.js"></script>
+    <!-- archung js -->
+    <script type="text/javascript" src="js/lib/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/lib/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="js/ChungTool.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- live reload -->
+    <script>
+        if (!ChungTool.isOnline()) {
+            document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+                ':35729/livereload.js?snipver=1"></' + 'script>')
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <div class="header">
+        <div class="left"></div>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="right"></div>
+    </div> -->
+    <div class="mainContainer" id="memberPage">
+        <div class="menuBar">
+            <a href="member.html" class="signIn"></a>
+            <div class="login poploginBtn">
+                <i class="manPic"></i>
+                <div class="txt f24">Login</div>
+            </div>
+            <a href="member_info.html" class="login">
+
+                <i class="manPic"></i>
+                <div class="txt f24">游志忠</div>
+
+            </a>
+            <div class="menu menuToggle"></div>
+        </div>
+        <div class="sideMenu">
+            <div class="clozBtn menuToggle"></div>
+            <ul class='goldTxt f26 ta_c'>
+                <li>
+                    <a href="index.html">首頁</a>
+                </li>
+                <li>
+                    <a href="index.html?page=1">星禮有您</a>
+                </li>
+                <li>
+                    <a href="index.html?page=2">會員權益</a>
+                </li>
+                <li>
+                    <a href="index.html?page=3">活動花絮</a>
+                </li>
+                <li>
+                    <a href="#">常見問題</a>
+                </li>
+            </ul>
+        </div>
+        <div class="popLogin hide">
+            <div class="container goldFrameBox pBox">
+                <div class="clozBtn"></div>
+                <div class="f36 goldTxt">請輸入您的三星帳戶</div>
+                <form action="" class='mt_b f24 wTxt'>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt">ID</span>
+                            <div class="inputConatiner">
+                                <input type="text" class='wTxt'>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt">密碼</span>
+                            <div class="inputConatiner">
+                                <input type="password" class='wTxt'>
+                            </div>
+                        </label>
+                    </div>
+                    <input type="submit" class='formSubmitBtn' value='登入'>
+                    <div class="wTxt f18 mt_b ta_c">
+                        <a href="#" class="blueTxt">忘記您的帳戶ID或密碼</a>
+                        <br>或
+                        <a href="#" class="blueTxt">在此註冊</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="container goldFrameBox pBox wTxt">
+            <div class="f38 goldTxt">常見問題</div>
+            <div class="f30 goldTxt mt_b">會籍資格</div>
+            <div class="goldTxt mt_b f24">當我的會員資格快要到期時，是否會通知我？</div>
+            <div class="f16 mt_s">【三星聚樂部】的兩年會籍屆滿時，mySamsung將會在會籍到期一個月前自動發送「會籍屆滿通知」至mySamsung app，會籍到期日後，會員會籍權益將立即取消。</div>
+            <div class="goldTxt mt_b f24">我該如何取消三星會員資格？</div>
+            <div class="f16 mt_s">請至客服中心取消。
+                    請洽客服：0800-329-999，週一至週五 上午09:00 - 晚上19:00；週六 上午09:00 - 晚上18:00。</div>
+            <div class="goldTxt mt_b f24">我購買的是二手機、整新機、或接手別人使用過的手機或是平板，是否還是可以註冊會員？</div>
+            <div class="f16 mt_s">【三星聚樂部】之會員權益僅限於購買三星新產品之產品持有者，且認證需要透過提交購買發票等購買憑證做為申請，若您購入的產品若曾經已被註冊，將直接影響您的會員權益，您將無法註冊會員。</div>
+            <div class="goldTxt mt_b f24">如果我賣掉手機或平板，是否還仍有權利享有會員資格與權益？</div>
+            <div class="f16 mt_s">【三星聚樂部】之會員資格僅限於三星產品持有者，因此若您手上已無持有三星智慧手機或平板，將不能持續享有會員資格與權益。</div>
+            <div class="goldTxt mt_b f24">若發票遺失，是否能加入會員？</div>
+            <div class="f16 mt_s">購買時三個月內可向賣方申請補發購買憑證或發票，補發後再加入會員。註冊會員時，請務必於產品購買日三個月內完成會員註冊程序，否則將視同自動放棄入會會籍。</div>
+            
+        </div>
+        <!-- <div class="footer">
+            <div class="f_top">
+                <div class="pic"></div>
+            </div>
+            <div class="f_bottom">
+                <div class="pic"></div>
+            </div>
+        </div> -->
+    </div>
+
+</body>
+
+
+</html>
