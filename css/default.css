@@ -3171,6 +3171,19 @@ body {
   line-height: 60px;
 }
 
+form .inputBox .selectWrap.disabled {
+  background-image: none;
+}
+
+form input[type='checkbox']:disabled:not(:checked) + label:before {
+  background-color: inherit;
+}
+
+#memberPage .card {
+  margin-top: 30px;
+  max-width: 350px;
+}
+
 .padShow {
   display: none !important;
 }
