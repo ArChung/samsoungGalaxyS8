@@ -156,9 +156,6 @@ html, body {
   display: flex;
   z-index: 5;
 }
-.menuBar > * {
-  margin: 0 8px;
-}
 .menuBar > :not(.line) {
   cursor: pointer;
   display: block;
@@ -167,11 +164,6 @@ html, body {
   height: 60px;
   width: 1px;
   background-color: #8b7d66;
-}
-.menuBar .signIn {
-  width: 122px;
-  height: 60px;
-  background-image: url("../images/s_login.png");
 }
 .menuBar .login {
   width: 141px;

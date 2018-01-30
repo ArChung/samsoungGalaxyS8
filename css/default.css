@@ -3131,6 +3131,24 @@ body {
 .menuBar.fixMenu {
   position: fixed;
 }
+.menuBar > * {
+  position: relative;
+  margin: 0 20px;
+}
+.menuBar > *:not(:last-child):after {
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background-color: #e9d3a9;
+  content: "";
+  right: -20px;
+  top: 15%;
+}
+.menuBar .signIn {
+  width: 82px;
+  height: 60px;
+  background-image: url("../images/s_login.png");
+}
 
 .mainContainer .menuBar .login {
   background-image: none;
