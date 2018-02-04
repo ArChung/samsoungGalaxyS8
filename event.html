@@ -54,7 +54,7 @@
         </a>
         <div class="right"></div>
     </div> -->
-    <div class="mainContainer blackBgPage" id='eventPage'>
+    <div class="mainContainer ">
         <div class="menuBar">
             <a href="member.html" class="signIn"></a>
             <div class="login poploginBtn">
@@ -118,23 +118,25 @@
                 </form>
             </div>
         </div>
-        <div class="container goldFrameBox pBox">
-            <div class="f36 goldTxt">活動名稱</div>
-            <div class="f18 goldTxt mt_s">活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述</div>
-            <div class="swiper-container mt_b" id='photoSwiper'>
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide" style="background-image:url(images/p1.png)"></div>
-                    <div class="swiper-slide" style="background-image:url(images/p2.png)"></div>
-                    <div class="swiper-slide" style="background-image:url(images/p2.png)"></div>
-                    <div class="swiper-slide" style="background-image:url(images/p2.png)"></div>
+        <div id="eventPage" class='blackBgPage'>
+            <div class="container goldFrameBox pBox">
+                <div class="f36 goldTxt">活動名稱</div>
+                <div class="f18 goldTxt mt_s">活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述活動描述</div>
+                <div class="swiper-container mt_b" id='photoSwiper'>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide" style="background-image:url(images/p1.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/p2.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/p2.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/p2.png)"></div>
+                    </div>
+                    <div class="swiper-pagination newsSwiper-pagination"></div>
+                    <div class="swiper-button-next">
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-pagination newsSwiper-pagination"></div>
-                <div class="swiper-button-next">
-                    
-                </div>
-                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
@@ -167,7 +169,7 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            loop:true,
+            loop: true,
             // slidesPerView: 3,
         });
     }

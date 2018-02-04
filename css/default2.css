@@ -66,7 +66,7 @@ html, body {
   position: relative;
   min-height: 100%;
 }
-.mainContainer#index {
+.mainContainer #index {
   background-color: black;
 }
 
@@ -152,7 +152,7 @@ html, body {
 
 .menuBar {
   position: absolute;
-  right: 30px;
+  right: 0px;
   top: 15px;
   display: flex;
   z-index: 5;
@@ -415,24 +415,25 @@ a:hover {
 #newsSwiper .swiper-wrapper .slide1 {
   background-color: black;
 }
-#newsSwiper .swiper-wrapper .slide1 .pic {
-  width: 1920px;
+/* #newsSwiper .swiper-wrapper .slide1 .pic {
+  max-width: 1920px;
   height: 860px;
   background-image: url("../images/index.png");
   position: absolute;
   bottom: 0;
   left: 50%;
   margin-left: -960px;
-}
+} */
 #newsSwiper .swiper-wrapper .slide1 .titleBox {
   position: absolute;
   top: 150px;
   left: 100px;
 }
 #newsSwiper .swiper-wrapper .slide1 .titleBox .title {
-  width: 489px;
-  height: 243px;
-  background-image: url("../images/s1_title.png");
+  width: 311px;
+  height: 80px;
+  background-image: url(../images/s1_title_logo.png);
+  margin-left: -5px;
 }
 #newsSwiper .swiper-wrapper .slide1 .titleBox .btn {
   width: 77px;
@@ -634,15 +635,17 @@ a:hover {
   position: relative;
 }
 .pageFixTitle .pageBox .title {
-  width: 260px;
-  height: 87px;
-  background-image: url("../images/about_title.png");
+  
   position: relative;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-
+#aboutPage .pageFixTitle .pageBox .title{
+  width: 260px;
+  height: 87px;
+  background-image: url("../images/about_title.png");
+}
 #aboutPage {
   background-color: transparent;
 }
@@ -658,13 +661,13 @@ a:hover {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("../images/about_bg.jpg");
+  /* background-image: url("../images/about_bg.jpg"); */
 }
-#aboutPage .pageBox {
+/* #aboutPage .pageBox {
   width: 100%;
   height: 640px;
   position: relative;
-}
+} */
 #aboutPage .pageBox .title {
   width: 260px;
   height: 87px;
@@ -699,11 +702,11 @@ a:hover {
   margin-top: 50px;
 }
 
-#lecturePage .pageFixTitle .pageBox .title {
+/* #lecturePage .pageFixTitle .pageBox .title {
   width: 458px;
   height: 109px;
   background-image: url("../images/sign_title.png");
-}
+} */
 #lecturePage .blackPageBox {
   width: 100%;
   background-color: black;
@@ -724,43 +727,42 @@ a:hover {
 }
 
 #memberPage {
-  background: black url("../images/member_bg.jpg");
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  -webkit-background-size: contain;
-  background-size: contain;
-  background-position: 50% 50%;
+  background-image: black url("../images/member_bg.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0 ;
   overflow: auto;
 }
 
 
 .blackBgPage {
   background: black url("../images/member_bg.jpg");
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  -webkit-background-size: contain;
-  background-size: contain;
-  background-position: 50% 50%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0 ;
   overflow: auto;
+  padding: 0px 25px;
 }
 
 .blackBgPage > .container {
   margin: 150px auto;
-  width: 1050px;
+  max-width: 1050px;
 }
 
-
+/* 
 #memberPage > .container {
   margin: 150px auto;
   width: 1050px;
-}
+} */
 
 #memberPage2 {
-  background: black url("../images/member_bg.jpg");
+  /* background: black url("../images/member_bg.jpg");
   -moz-background-size: contain;
   -o-background-size: contain;
   -webkit-background-size: contain;
@@ -768,25 +770,24 @@ a:hover {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-position: 0 0;
-  overflow: auto;
+  overflow: auto; */
 }
-#memberPage2 > .container {
+/* #memberPage2 > .container {
   margin: 150px auto;
   width: 1050px;
-}
+} */
 #memberPage2 > .container .note {
   width: 100%;
   background-color: white;
-  padding: 15px 0;
+  padding: 15px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  
 }
-#memberPage2 > .container .note .pic {
+#memberPage2 > .container .note img {
+  display: block;
   margin: 0 auto;
-  width: 765px;
-  height: 107px;
-  background-image: url("../images/note.jpg");
 }
 
 .padShow {

@@ -26,7 +26,7 @@
     <meta property="fb:app_id" content="" />
     <!-- css start-->
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/default2.css"> 
+    <link rel="stylesheet" href="css/default2.css">
     <link rel="stylesheet" href="css/default.css">
     <!-- js start-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -54,7 +54,7 @@
         </a>
         <div class="right"></div>
     </div> -->
-    <div class="mainContainer" id='index'>
+    <div class="mainContainer">
         <div class="menuBar">
             <a href="member.html" class="signIn"></a>
             <div class="login poploginBtn">
@@ -118,134 +118,142 @@
                 </form>
             </div>
         </div>
-        <div class="swiper-container" id='newsSwiper'>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide slide1">
+        <div id="index">
+            <div class="swiper-container" id='newsSwiper'>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide slide1">
 
-                    <video width="100%" width="100" % autoplay loop="loop">
-                        <source src="images/star.mp4">
-                    </video>
-                    <div class="pic"></div>
-                    <div class="titleBox">
-                        <a href="about.html">
-                            <div class="title"></div>
-                            <div class="btn"></div>
+                        <video width="100%" width="100" % autoplay loop="loop">
+                            <source src="images/star.mp4">
+                        </video>
+                        <div class="pic"></div>
+                        <div class="titleBox">
+                            <a href="about.html">
+                                <div class="titleLogo"></div>
+                                <div class="titleLine"></div>
+                                <div class="f48 fwb wTxt">即刻加入即享購物金 </div>
+                                <div class="f36 wTxt bls">還有更多會員專屬優惠</div>
+                                <div class="btn"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="titleBox">
+                            <a href="lecture.html">
+                                <div class="titleLogo"></div>
+                                <div class="titleLine"></div>
+                                <div class="f48 fwb wTxt">8個 Galaxy S8 秘星</div>
+                                <div class="f36 wTxt bls">會員限定講座</div>
+                                <div class="btn"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination newsSwiper-pagination"></div>
+            </div>
+            <div class="pageTxtBox " id='pagePoint1'>
+                <div class="f46 goldTxt bls">歡迎來到三星聚樂部</div>
+                <div class="f24 wTxt bls mt_s pf20">這是提供特別熱愛三星產品的尊貴用戶，能聚集歡樂、
+                    <br>分享知識、獲得更多感動的專屬社群。</div>
+            </div>
+
+            <div class="picWrap hoverAnimation">
+                <div class="picBox ">
+                    <div class="pic p1"></div>
+                    <div class="txt wTxt">
+                        <div class="f36">新機發表會員優遇</div>
+                        <div class="f23 mt_s">新機搶先體驗，還可能有獨家加碼組合</div>
+                    </div>
+                </div>
+                <div class="picBox">
+                    <div class="pic p2"></div>
+                    <div class="txt wTxt">
+                        <div class="f36">個人專屬 用心對您</div>
+                        <div class="f23 mt_s">特別時光貼心照顧，生日同樂、不定時關懷</div>
+                    </div>
+                </div>
+                <div class="picBox">
+                    <div class="pic p3"></div>
+                    <div class="txt ">
+                        <div class="f36">娛樂超有感</div>
+                        <div class="f23 mt_s">會員獨享活動，show出您的熱情與熱血</div>
+                    </div>
+                </div>
+                <div class="picBox">
+                    <div class="pic p4"></div>
+                    <div class="txt wTxt">
+                        <div class="f36">達人教學面對面</div>
+                        <div class="f23 mt_s">深入探究Galaxy奧秘，專業達人講師開講</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageTxtBox2 mt_b" id='pagePoint2'>
+                <div class="subContainer">
+                    <div class="f36 wTxt bls">三星聚樂部 入會資格說明</div>
+                    <div class="f23 wTxt  mt_s">自2017年4月28日起，在任何通路購買不限機型的三星
+                        <br>智慧手機或平板，即可申請成為「三星聚樂部」會員。
+                    </div>
+                </div>
+            </div>
+            <div class="pageTxtBox mt_b" id='pagePoint3'>
+                <div class="f46 goldTxt bls">活動花絮</div>
+                <div class="tabBox wTxt f30 withActiveLine mt_s eventTabs">
+                    <div class="tab tab2">過去活動</div>
+                    <div class="tab active tab1">最新活動</div>
+                </div>
+            </div>
+            <div class="swiper-container" id='eventSwiper'>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="event.html">
+                            <div class="pic" style="background-image:url('images/Event_Lecture.jpeg')"></div>
+                            <div class="txtBox">
+                                <div class="f32 goldTxt">8 個你該知道的 Galaxy S8 秘星</div>
+                                <div class="f18 goldTxt">活動日期：2017-08-05(六) ~ 2017-08-06(日) </div>
+                                <div class="f20 grayTxt mt_s">三星聚樂部會員限定! 邀請會員一起探索Galaxy S8|S8+還有哪些三星的秘星技能！</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="event.html">
+                            <div class="pic" style="background-image:url('images/Event_Running.jpeg')"></div>
+                            <div class="txtBox">
+                                <div class="f32 goldTxt">三星公益路跑活動</div>
+                                <div class="f18 goldTxt">活動日期：2017-10-15(日) </div>
+                                <div class="f20 grayTxt mt_s">邀請聚樂部會員共襄盛舉公益路跑，300個免報名費的名額限量送出！</div>
+                            </div>
                         </a>
                     </div>
 
-                </div>
-                <div class="swiper-slide slide2">
-                    <div class="titleBox">
+
+                    <div class="swiper-slide">
+                        <a href="event.html">
+                            <div class="pic" style="background-image:url('images/Event_Movie.jpeg')"></div>
+                            <div class="txtBox">
+                                <div class="f32 goldTxt">會員獨享 ‧ 電影同樂</div>
+                                <div class="f18 goldTxt">活動日期：2017-12-16(六) ~ 2017-12-17(日) </div>
+                                <div class="f20 grayTxt mt_s">為感謝會員的支持，讓三星聚樂部凝聚出強大的能量場，邀請會員觀賞經典電影「星際大戰：最後的絕地武士」</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
                         <a href="lecture.html">
-                            <div class="title"></div>
-                            <div class="btn"></div>
+                            <div class="pic" style="background-image:url('images/Event_KK.png')"></div>
+                            <div class="txtBox">
+                                <div class="f32 goldTxt">眾星雲集，會員專屬</div>
+                                <div class="f18 goldTxt">活動日期：2018-01-20(六)</div>
+                                <div class="f20 grayTxt mt_s">邀集會員一同參與【第13 屆KKBOX 風雲榜】，盡情享受三星聚樂部會員專屬的尊榮禮遇！</div>
+                            </div>
                         </a>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination newsSwiper-pagination"></div>
-        </div>
-        <div class="pageTxtBox " id='pagePoint1'>
-            <div class="f46 goldTxt bls">歡迎來到三星聚樂部</div>
-            <div class="f24 wTxt bls mt_s">這是提供特別熱愛三星產品的尊貴用戶，能聚集歡樂、
-                <br>分享知識、獲得更多感動的專屬社群。</div>
-        </div>
-
-        <div class="picWrap hoverAnimation">
-            <div class="picBox ">
-                <div class="pic p1"></div>
-                <div class="txt wTxt">
-                    <div class="f36">新機發表會員優遇</div>
-                    <div class="f23 mt_s">新機搶先體驗，還可能有獨家加碼組合</div>
-                </div>
-            </div>
-            <div class="picBox">
-                <div class="pic p2"></div>
-                <div class="txt wTxt">
-                    <div class="f36">個人專屬 用心對您</div>
-                    <div class="f23 mt_s">特別時光貼心照顧，生日同樂、不定時關懷</div>
-                </div>
-            </div>
-            <div class="picBox">
-                <div class="pic p3"></div>
-                <div class="txt ">
-                    <div class="f36">娛樂超有感</div>
-                    <div class="f23 mt_s">會員獨享活動，show出您的熱情與熱血</div>
-                </div>
-            </div>
-            <div class="picBox">
-                <div class="pic p4"></div>
-                <div class="txt wTxt">
-                    <div class="f36">達人教學面對面</div>
-                    <div class="f23 mt_s">深入探究Galaxy奧秘，專業達人講師開講</div>
-                </div>
-            </div>
-        </div>
-        <div class="pageTxtBox2 mt_b" id='pagePoint2'>
-            <div class="subContainer">
-                <div class="f36 wTxt bls">三星聚樂部 入會資格說明</div>
-                <div class="f23 wTxt  mt_s">自2017年4月28日起，在任何通路購買不限機型的三星
-                    <br>智慧手機或平板，即可申請成為「三星聚樂部」會員。
-                </div>
-            </div>
-        </div>
-        <div class="pageTxtBox mt_b" id='pagePoint3'>
-            <div class="f46 goldTxt bls">活動花絮</div>
-            <div class="tabBox wTxt f30 withActiveLine mt_s eventTabs">
-                <div class="tab tab2">過去活動</div>
-                <div class="tab active tab1">最新活動</div>
-            </div>
-        </div>
-        <div class="swiper-container" id='eventSwiper'>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <a href="event.html">
-                        <div class="pic" style="background-image:url('images/Event_Lecture.jpeg')"></div>
-                        <div class="txtBox">
-                            <div class="f32 goldTxt">8 個你該知道的 Galaxy S8 秘星</div>
-                            <div class="f18 goldTxt">活動日期：2017-08-05(六) ~ 2017-08-06(日) </div>
-                            <div class="f20 grayTxt mt_s">三星聚樂部會員限定! 邀請會員一起探索Galaxy S8|S8+還有哪些三星的秘星技能！</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="event.html">
-                        <div class="pic" style="background-image:url('images/Event_Running.jpeg')"></div>
-                        <div class="txtBox">
-                            <div class="f32 goldTxt">三星公益路跑活動</div>
-                            <div class="f18 goldTxt">活動日期：2017-10-15(日) </div>
-                            <div class="f20 grayTxt mt_s">邀請聚樂部會員共襄盛舉公益路跑，300個免報名費的名額限量送出！</div>
-                        </div>
-                    </a>
-                </div>
-                
-                
-                <div class="swiper-slide">
-                    <a href="event.html">
-                        <div class="pic" style="background-image:url('images/Event_Movie.jpeg')"></div>
-                        <div class="txtBox">
-                            <div class="f32 goldTxt">會員獨享 ‧ 電影同樂</div>
-                            <div class="f18 goldTxt">活動日期：2017-12-16(六) ~ 2017-12-17(日) </div>
-                            <div class="f20 grayTxt mt_s">為感謝會員的支持，讓三星聚樂部凝聚出強大的能量場，邀請會員觀賞經典電影「星際大戰：最後的絕地武士」</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="lecture.html">
-                        <div class="pic" style="background-image:url('images/Event_KK.png')"></div>
-                        <div class="txtBox">
-                            <div class="f32 goldTxt">眾星雲集，會員專屬</div>
-                            <div class="f18 goldTxt">活動日期：2018-01-20(六)</div>
-                            <div class="f20 grayTxt mt_s">邀集會員一同參與【第13 屆KKBOX 風雲榜】，盡情享受三星聚樂部會員專屬的尊榮禮遇！</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
         </div>
 
     </div>
