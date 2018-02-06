@@ -128,7 +128,13 @@ html, body {
   right: 0;
 }
 .sideMenu ul {
-  margin-top: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)  translateX(-50%);
+  display: block;
+
+
 }
 .sideMenu ul li {
   padding: 35px 50px;
@@ -152,11 +158,17 @@ html, body {
 
 .menuBar {
   position: absolute;
-  right: 0px;
-  top: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   z-index: 5;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: flex-end;
 }
+
+
 .menuBar > :not(.line) {
   cursor: pointer;
   display: block;
@@ -717,10 +729,10 @@ a:hover {
   margin: 0 auto;
 }
 #lecturePage .blackPageBox .t1 {
-  width: 714px;
+  /* width: 714px;
   height: 90px;
   background-image: url("../images/sign_t2.png");
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 #lecturePage .blackPageBox p {
   margin-top: 50px;
