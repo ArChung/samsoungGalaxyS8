@@ -3540,9 +3540,9 @@ a:hover {
 }
 #index .pageTxtBox2 .subContainer {
   position: absolute;
-  left: 50%;
-  margin-left: -620px;
+  left: 10%;
   top: 150px;
+  width: 500px;
 }
 
 .eventTabs .tab {
