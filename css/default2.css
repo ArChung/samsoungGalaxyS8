@@ -337,7 +337,12 @@ form .inputBox .selectWrap select option {
   width: 300px;
   text-align: center;
 }
-form .formSubmitBtn:hover {
+
+.formSubmitBtn.smallBtn{
+  padding: 15px 0;
+}
+
+.formSubmitBtn:hover {
   background-color: #3d3d3d;
   color: white;
 }
