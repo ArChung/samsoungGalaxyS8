@@ -224,7 +224,10 @@
                         <!-- <div class="pic"></div> -->
                         <img src="images/note.jpg" alt="">
                     </div>
-                    <input type="submit" class='formSubmitBtn' value='完成送出'>
+                    <div class="rowWrap">
+                        <a href="member.html" class='formSubmitBtn smallBtn'>回上一頁</a>
+                        <input type="submit" class='formSubmitBtn' value='完成送出'>
+                    </div>
                 </form>
             </div>
         </div>
@@ -240,14 +243,5 @@
     </div>
 
 </body>
-<script>
-    $(document).ready(function () {
-
-        $('form .formSubmitBtn').on('click', function (e) {
-            e.preventDefault();
-            window.location = 'index.html'
-        })
-    })
-</script>
 
 </html>
