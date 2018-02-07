@@ -3595,6 +3595,12 @@ a:hover {
 form .inputBox .selectWrap.disabled {
   background-image: none;
 }
+form.uneditable .inputBox:after {
+  background-color: transparent;
+}
+form.uneditable .inputBox .selectWrap select {
+  text-align-last: left;
+}
 
 form input[type='checkbox']:disabled:not(:checked) + label:before {
   background-color: inherit;

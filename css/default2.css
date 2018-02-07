@@ -318,7 +318,8 @@ form .inputBox .selectWrap select:active, form .inputBox .selectWrap select:hove
 form .inputBox .selectWrap select option {
   background-color: black;
 }
-form .formSubmitBtn {
+
+.formSubmitBtn {
   display: block;
   background-color: white;
   margin: 0 auto;
