@@ -3,6 +3,29 @@ $(document).ready(function() {
    
     initMenu();
     initLogin();
+
+
+    $('.editBtn').on('click', function (e) {
+        if(!$(this).hasClass('linkBtn')){
+            var t = $(this).closest('.editBox');
+            t.find('input').prop('disabled', false).focus();
+            // t.find('.selectWrap').removeClass('disabled');
+            t.find('select').prop('disabled', false);
+            t.addClass('editable');
+            t.find('.editBtn').addClass('hide');
+            t.find('.saveBtn').removeClass('hide');
+        }
+        
+    });
+
+     $('.saveBtn').on('click', function (e) {
+        var t = $(this).closest('.editBox');
+        t.find('input').prop('disabled', true);
+        t.find('select').prop('disabled', true);
+        t.removeClass('editable');
+        t.find('.editBtn').removeClass('hide');
+        t.find('.saveBtn').addClass('hide');
+    })
 })
 
 

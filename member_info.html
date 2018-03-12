@@ -124,39 +124,51 @@
                 <div class="f38 goldTxt">會員資料</div>
                 <!-- <div class="f24 goldTxt">*號為必填欄位</div> -->
                 <form action="" class='mt_b f24 wTxt uneditable'>
-                    <div class="inputBox">
+                    <div class="inputBox editBox">
                         <label>
-                            <span class="nameTxt">*姓</span>
+                            <span class="nameTxt">姓</span>
                             <div class="inputConatiner">
                                 <input type="text" class='wTxt' value='游' disabled>
                             </div>
                         </label>
+                        <div class="btnWrap">
+                            <a href='https://account.samsung.com/membership/index.do' target="_blank" class="editBtn linkBtn">編輯資料</a>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
-                    <div class="inputBox">
+                    <div class="inputBox editBox">
                         <label>
-                            <span class="nameTxt">*名</span>
+                            <span class="nameTxt">名</span>
                             <div class="inputConatiner">
                                 <input type="text" class='wTxt' value='志忠' disabled>
                             </div>
                         </label>
+                        <div class="btnWrap">
+                            <a href='https://account.samsung.com/membership/index.do' target="_blank" class="editBtn linkBtn">編輯資料</a>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
-                    <div class="typeBox checkBoxWrap mb_b">
+                    <div class="typeBox checkBoxWrap mb_b editBox">
                         <p>
-                            *性別
+                            性別
                         </p>
                         <p>
-                            <input type="checkbox" id="c0_2" checked disabled>
+                            <input type="radio" id="c0_2" name='gender' checked disabled>
                             <label for="c0_2">男</label>
                         </p>
                         <p>
-                            <input type="checkbox" id="c0_3" disabled>
+                            <input type="radio" id="c0_3" name='gender' disabled>
                             <label for="c0_3">女</label>
                         </p>
+                        <div class="btnWrap">
+                            <div class="editBtn">編輯資料</div>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
-                    <div class="rowWrap">
+                    <div class="rowWrap editBox">
                         <div class="inputBox short">
                             <label>
-                                <span class="nameTxt">*生日</span>
+                                <span class="nameTxt">生日</span>
                                 <div class="inputConatiner">
                                     <div class="selectWrap disabled">
                                         <select name="" id="" disabled>
@@ -171,7 +183,7 @@
                         </div>
                         <div class="inputBox short">
                             <label>
-                                <!-- <span class="nameTxt">*生日</span> -->
+                                <!-- <span class="nameTxt">生日</span> -->
                                 <div class="inputConatiner">
                                     <div class="selectWrap disabled">
                                         <select name="" id="" disabled>
@@ -194,7 +206,7 @@
                         </div>
                         <div class="inputBox short">
                             <label>
-                                <!-- <span class="nameTxt">*生日</span> -->
+                                <!-- <span class="nameTxt">生日</span> -->
                                 <div class="inputConatiner">
                                     <div class="selectWrap disabled">
                                         <select name="" id="" disabled>
@@ -234,28 +246,36 @@
                                 </div>
                             </label>
                         </div>
+                        <div class="btnWrap">
+                            <a href='https://account.samsung.com/membership/index.do' target="_blank" class="editBtn linkBtn">編輯資料</a>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
 
-                    <div class="inputBox">
+                    <div class="inputBox editBox">
                         <label>
-                            <span class="nameTxt">*手機號碼</span>
+                            <span class="nameTxt">手機號碼</span>
                             <div class="inputConatiner">
                                 <input type="text" class='wTxt' value='0926276430' disabled>
                             </div>
                         </label>
+                        <div class="btnWrap">
+                            <a href='https://account.samsung.com/membership/index.do' target="_blank" class="editBtn linkBtn">編輯資料</a>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
                     <div class="inputBox">
                         <label>
-                            <span class="nameTxt">*Email</span>
+                            <span class="nameTxt">Email</span>
                             <div class="inputConatiner">
                                 <input type="text" class='wTxt' value='until5000@gmail.com' disabled>
                             </div>
                         </label>
                         <div class="blueTxt f18 mt_s hide">需與您註冊「三星帳號」時使用的 email 相同</div>
                     </div>
-                    <div class="inputBox">
+                    <div class="inputBox editBox">
                         <label>
-                            <span class="nameTxt">*居住城市</span>
+                            <span class="nameTxt">居住城市</span>
                             <div class="selectWrap disabled">
                                 <select name="" id="" disabled>
                                     <option value="">A</option>
@@ -265,105 +285,151 @@
                                 </select>
                             </div>
                         </label>
+                        <div class="btnWrap">
+                            <div class="editBtn ">編輯資料</div>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
-
-
-                    <div class="goldTxt mt_bb">有興趣的產品類別</div>
-                    <div class="typeBox checkBoxWrap">
-                        <p>
-                            <input type="checkbox" id="c2_1" disabled>
-                            <label for="c2_1">電視</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c2_2" disabled>
-                            <label for="c2_2">洗衣機</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c2_3" disabled checked>
-                            <label for="c2_3">冰箱</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c2_4" disabled>
-                            <label for="c2_4">吸塵器</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c2_5" disabled checked>
-                            <label for="c2_5">印表機</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c2_6" disabled>
-                            <label for="c2_6">顯示器</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c2_7" disabled>
-                            <label for="c2_7">音響設備</label>
-                        </p>
+                    <div class="inputBox editBox">
+                        <label>
+                            <span class="nameTxt">現有會籍之手機登記型號</span>
+                            <div class="selectWrap disabled">
+                                <select name="" id="" disabled>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                    <option value="">C</option>
+                                    <option value="" selected="selected">D</option>
+                                </select>
+                            </div>
+                        </label>
+                        <div class="btnWrap">
+                            <div class="editBtn ">編輯資料</div>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
-                    <div class="goldTxt mt_bb">興趣</div>
-                    <div class="typeBox checkBoxWrap">
-                        <p>
-                            <input type="checkbox" id="c3_1" disabled checked>
-                            <label for="c3_1">美食</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_2" disabled>
-                            <label for="c3_2">旅遊</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_3" disabled>
-                            <label for="c3_3">3C科技</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_4" disabled checked>
-                            <label for="c3_4">流行時尚</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_5" disabled>
-                            <label for="c3_5">美妝</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_6" disabled>
-                            <label for="c3_6">運動</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_7" disabled>
-                            <label for="c3_7">遊戲</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_8" disabled>
-                            <label for="c3_8">藝術</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c3_9" disabled>
-                            <label for="c3_9">攝影</label>
-                        </p>
+                    <div class="inputBox">
+                        <label>
+                            <span class="nameTxt">會籍效期
+                            </span>
+                            <div class="inputConatiner">
+                                <input type="text" class='wTxt' value='2017-08-09' disabled>
+                            </div>
+                        </label>
                     </div>
-                    <div class="goldTxt mt_bb">通知方式</div>
-                    <div class="typeBox checkBoxWrap">
-                        <p>
-                            <input type="checkbox" id="c4_1" disabled>
-                            <label for="c4_1">電子郵件</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c4_2" disabled checked>
-                            <label for="c4_2">簡訊</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c4_3" disabled>
-                            <label for="c4_3">手機訊息推播</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c4_4" disabled>
-                            <label for="c4_4">社群通訊訊息</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c4_5" disabled>
-                            <label for="c4_5">實體邀請卡</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="c4_6" disabled>
-                            <label for="c4_6">電話</label>
-                        </p>
+                    <div class="editBox">
+                        <div class="goldTxt mt_bb">有興趣的產品類別</div>
+                        <div class="typeBox checkBoxWrap">
+                            <p>
+                                <input type="checkbox" id="c2_1" disabled>
+                                <label for="c2_1">電視</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c2_2" disabled>
+                                <label for="c2_2">洗衣機</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c2_3" disabled checked>
+                                <label for="c2_3">冰箱</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c2_4" disabled>
+                                <label for="c2_4">吸塵器</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c2_5" disabled checked>
+                                <label for="c2_5">印表機</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c2_6" disabled>
+                                <label for="c2_6">顯示器</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c2_7" disabled>
+                                <label for="c2_7">音響設備</label>
+                            </p>
+                        </div>
+                        <div class="btnWrap">
+                            <div class="editBtn ">編輯資料</div>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
+                    </div>
+                    <div class="editBox">
+                        <div class="goldTxt mt_bb">興趣</div>
+                        <div class="typeBox checkBoxWrap">
+                            <p>
+                                <input type="checkbox" id="c3_1" disabled checked>
+                                <label for="c3_1">美食</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_2" disabled>
+                                <label for="c3_2">旅遊</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_3" disabled>
+                                <label for="c3_3">3C科技</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_4" disabled checked>
+                                <label for="c3_4">流行時尚</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_5" disabled>
+                                <label for="c3_5">美妝</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_6" disabled>
+                                <label for="c3_6">運動</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_7" disabled>
+                                <label for="c3_7">遊戲</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_8" disabled>
+                                <label for="c3_8">藝術</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c3_9" disabled>
+                                <label for="c3_9">攝影</label>
+                            </p>
+                        </div>
+                        <div class="btnWrap">
+                            <div class="editBtn ">編輯資料</div>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
+                    </div>
+                    <div class="editBox">
+                        <div class="goldTxt mt_bb">通知方式</div>
+                        <div class="typeBox checkBoxWrap">
+                            <p>
+                                <input type="checkbox" id="c4_1" disabled>
+                                <label for="c4_1">電子郵件</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c4_2" disabled checked>
+                                <label for="c4_2">簡訊</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c4_3" disabled>
+                                <label for="c4_3">手機訊息推播</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c4_4" disabled>
+                                <label for="c4_4">社群通訊訊息</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c4_5" disabled>
+                                <label for="c4_5">實體邀請卡</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="c4_6" disabled>
+                                <label for="c4_6">電話</label>
+                            </p>
+                        </div>
+                        <div class="btnWrap">
+                            <div class="editBtn ">編輯資料</div>
+                            <div class="saveBtn hide">儲存</div>
+                        </div>
                     </div>
                     <!-- <div class="formSubmitBtn">編輯</div>  -->
                     <!-- <input type="submit" class='formSubmitBtn' value='下一步'> -->
@@ -525,7 +591,13 @@
             e.preventDefault();
             window.location = 'member2.html'
         })
+
+        initEditBtn();
     })
+
+    function initEditBtn() {
+
+    }
 </script>
 
 </html>

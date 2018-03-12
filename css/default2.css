@@ -50,6 +50,7 @@ html, body {
 .rowWrap {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .rowWrap.rowLeft {
   justify-content: flex-start;
@@ -189,6 +190,58 @@ html, body {
   height: 60px;
   background-image: url("../images/menu.png");
 }
+
+form input[type='radio']:not(:checked), form input[type='radio']:checked {
+  position: absolute;
+  left: -9999px;
+}
+form input[type='radio']:not(:checked) + label, form input[type='radio']:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+form input[type='radio']:not(:checked) + label:before, form input[type='radio']:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  width: 1.25em;
+  height: 1.25em;
+  border: 1px solid #ffffff;
+}
+form input[type='radio']:not(:checked) + label:after, form input[type='radio']:checked + label:after {
+  content: "✔";
+  position: absolute;
+  top: 0.1em;
+  left: 0.2em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+form input[type='radio']:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+form input[type='radio']:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+form input[type='radio']:disabled:not(:checked) + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+form input[type='radio']:checked + label:before {
+  box-shadow: none;
+}
+form input[type='radio'] + label:hover:before {
+  border: 1px solid #8f8f8f !important;
+}
+
+
+
+
 
 form input[type='checkbox']:not(:checked), form input[type='checkbox']:checked {
   position: absolute;
