@@ -363,8 +363,8 @@ form .inputBox .selectWrap select {
   color: white;
   border: none;
   padding-left: 20px;
-  text-align-last: right;
-  padding-right: 25%;
+  /* text-align-last: right; */
+  /* padding-right: 25%; */
 }
 form .inputBox .selectWrap select:active, form .inputBox .selectWrap select:hover, form .inputBox .selectWrap select:focus {
   outline: 0;
